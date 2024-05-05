@@ -38,11 +38,11 @@ The dataset is a collection of `.json` objects. Each object has the following fo
 ```json
 {
   "category": "Arithmetic" | "Word Problems" | "Gemoetry",
-  "subcategory": <divided category further>,
-  "question": <question>,
-  "answer": <answer as float>,
-  "reasoning": (optional) <can be an equation, python program, etc.>,
-  "source": <source dataset name>
+  "subcategory": "<divided category further>",
+  "question": "<question>",
+  "answer": "<answer as float>",
+  "reasoning": "(optional) <can be an equation, python program, etc.>",
+  "source": "<source dataset name>"
 }
 ```
 
