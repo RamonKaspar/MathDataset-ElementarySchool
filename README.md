@@ -37,7 +37,7 @@ The dataset is a collection of `.json` objects. Each object has the following fo
 
 ```json
 {
-  "category": "Arithmetic" / "Word Problems" / "Gemoetry",
+  "category": "Arithmetic | Word Problems | Gemoetry",
   "subcategory": "<divided category further>",
   "question": "<question>",
   "answer": "<answer as float>",
