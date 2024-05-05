@@ -1,0 +1,785 @@
+category,subcategory,question,answer,reasoning,source
+Geometry,geometry,"a metallic sheet is of rectangular shape with dimensions 48 m x 36 m . from each of its corners , a square is cut off so as to make an open box . if the length of the square is 3 m , the volume of the box ( in m 3 ) is :",3780.0,"n0 = 48.0
+n1 = 36.0
+n2 = 3.0
+n3 = 3.0
+t0 = n2 * 2.0
+t1 = n0 - t0
+t2 = n1 - t0
+answer = n2 * t1 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a circle graph shows how the budget of a certain company was spent : 55 percent for salaries , 9 percent for research and development , 5 percent for utilities , 4 percent for equipment , 2 percent for supplies , and the remainder for transportation . if the area of each sector of the graph is proportional to the percent of the budget it represents , how many degrees of the circle are used to represent transportation ?",90.0,"n0 = 55.0
+n1 = 9.0
+n2 = 5.0
+n3 = 4.0
+n4 = 2.0
+t0 = n0 + n1
+t1 = n2 + t0
+t2 = n3 + t1
+t3 = n4 + t2
+t4 = 100.0 - t3
+t5 = t4 * 360.0
+answer = t5 / 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if a rectangular billboard has an area of 91 square feet and a perimeter of 40 feet , what is the length of each of the shorter sides ?",7.0,"import math
+n0 = 91.0
+n1 = 40.0
+t0 = n1 / 2.0
+t1 = n0 * 4.0
+t2 = t0**min(2.0, 5)
+t3 = t2 - t1
+t4 = math.sqrt(max(0, t3))
+t5 = t0 - t4
+answer = t5 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a volume of 11248 l water is in a container of sphere . how many hemisphere of volume 4 l each will be required to transfer all the water into the small hemispheres ?,2812.0,"n0 = 11248.0
+n1 = 4.0
+
+answer = n0 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a hall is 15 m long and 12 m broad . if the sum of the areas of the floor and the ceiling is equal to the sum of the areas of 4 walls , the volume of the hall is :",1200.0,"n0 = 15.0
+n1 = 12.0
+t0 = n1 * 2.0
+t1 = n0 * 2.0
+t2 = n0 * n1  # area of rectangle
+t3 = t0 + t1
+t4 = t2 * 2.0
+t5 = t4 / t3
+answer = n0 * n1 * t5
+print(answer)",MathQA_Geometry
+Geometry,geometry,the parameter of a square is equal to the perimeter of a rectangle of length 20 cm and breadth 14 cm . find the circumference of a semicircle whose diameter is equal to the side of the square . ( round off your answer to two decimal places ),26.703537555513243,"import math
+n0 = 20.0
+n1 = 14.0
+t0 = 2 * (n0 + n1)  # perimetere of rectangle
+t1 = t0 / 4. # square edge given perimeter
+t2 = t1 / 2.0
+t3 = 2 * math.pi * t2
+answer = t3 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a lamp is put on one corner of a square plot of side 50 m . it ' s light reaches 21 m . find the area of that plot that is lit by that lamp ?,346.3605900582747,"import math
+n0 = 50.0
+n1 = 21.0
+t0 = math.pi * n1**2
+answer = t0 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a certain rectangular crate measures 12 feet by 16 feet by 18 feet . a cylindrical gas tank is to be made for shipment in the crate and will stand upright when the crate is placed on one of its six faces . what should the radius of the tank be if it is to be of the largest possible volume ?,8.0,"import math
+n0 = 12.0
+n1 = 16.0
+n2 = 18.0
+t0 = n1 / 2.0
+t1 = n0 * 3.141592653589793
+t2 = math.pi * t0**2 * n0
+t3 = t2 / t1
+answer = math.sqrt(max(0, t3))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"three table runners have a combined area of 224 square inches . by overlapping the runners to cover 80 % of a table of area 175 square inches , the area that is covered by exactly two layers of runner is 24 square inches . what is the area of the table that is covered with three layers of runner ?",30.0,"n0 = 224.0
+n1 = 80.0
+n2 = 175.0
+n3 = 24.0
+t0 = n1 / 100.0
+t1 = n0 - n3
+t2 = n2 * t0
+t3 = t1 - t2
+answer = t3 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,30 square stone slabs of equal size were needed to cover a floor area of 120 sq . m . find the length of each stone slab ?,200.0,"import math
+n0 = 30.0
+n1 = 120.0
+t0 = n1 / n0
+t1 = math.sqrt(max(0, t0))
+answer = t1 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"points a , b , and , c have xy - coordinates ( 2,0 ) , ( 8,12 ) , and ( 14,0 ) , respectively . points x , y , and z have xy - coordinates ( 6,0 ) , ( 8,4 ) , and ( 10,0 ) , respectively . what fraction w of the area of triangle abc is the area of triangle xyz ?",0.111111111111111,"n0 = 2.0
+n1 = 0.0
+n2 = 8.0
+n3 = 12.0
+n4 = 14.0
+n5 = 0.0
+n6 = 6.0
+n7 = 0.0
+n8 = 8.0
+n9 = 4.0
+n10 = 10.0
+n11 = 0.0
+t0 = 10.0 + 2.0
+t1 = 4.0**min(2.0, 5)
+t2 = t1 / 2.0
+t3 = t0**min(2.0, 5)
+t4 = t3 / 2.0
+answer = t2 / t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the length of rectangle is thrice its breadth and its perimeter is 48 m , find the area of the rectangle ?",108.0,"n0 = 48.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 2.0
+t2 = t0 + t1
+t3 = n0 / t2
+t4 = t3 * 3.0
+answer = t3 * t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,the area of a rhombus is equal to the area of a rectangle whose length is 20 cm and the breadth is 10 cm . if one of the diagonals is 32 cm what is the length of other diagonal ?,12.5,"n0 = 20.0
+n1 = 10.0
+n2 = 32.0
+t0 = n0 * n1  # area of rectangle
+t1 = t0 * 2.0
+answer = t1 / n2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"2 corner most boxes of a chess board ( diagonally opposite ) haven been cut out there ' s a rectangular block = 2 sqaures of chess board , how many such blocks can be placed on the chess board ? ”",30.0,"n0 = 2.0
+n1 = 2.0
+t0 = n0 * n0
+t1 = t0 * t0
+t2 = n0 * t1
+answer = t2 - 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the surface of a cube is 150 sq cm . find its volume ?,125.0,"import math
+n0 = 150.0
+t0 = 2.0 + 4.0
+t1 = n0 / t0
+t2 = math.sqrt(max(0, t1))
+answer = t2**3
+print(answer)",MathQA_Geometry
+Geometry,geometry,a steel vessel has a base of length 60 cm and breadth 30 cm . water is poured in the vessel . a cubical steel box having edge of 30 cm is immersed completely in the vessel . how much will the water rise ?,15.0,"n0 = 60.0
+n1 = 30.0
+n2 = 30.0
+t0 = n0 * n1
+t1 = n1**min(3.0, 5)
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if the sides of a square are multiplied by sqrt ( 5 ) , the area of the original square is how many times as large as the area of the resultant square ?",20.0,"n0 = 5.0
+
+answer = 4 * n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if n is the smallest integer such that 432 times n is the square of an integer , what is the value of n ?",3.0,"n0 = 432.0
+t0 = n0 / 2.0
+t1 = t0 / 2.0
+t2 = t1 / 2.0
+t3 = t2 / 2.0
+t4 = t3 / 3.0
+answer = t4 / 3.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the floor of a rectangular room is 19 m long and 12 m wide . the room is surrounded by a veranda of width 2 m on all its sides . the area of the veranda is :,140.0,"n0 = 19.0
+n1 = 12.0
+n2 = 2.0
+t0 = n2 * n2
+t1 = n0 * n1  # area of rectangle
+t2 = n0 + t0
+t3 = n1 + t0
+t4 = t2 * t3  # area of rectangle
+answer = t4 - t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,what is the area of a square field whose diagonal of length 10 m ?,50.0,"n0 = 10.0
+t0 = n0**2
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,find the perimeter and area of a square of side 13 cm .,169.0,"n0 = 13.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"an equilateral triangle t 2 is formed by joining the mid points of the sides of another equilateral triangle t 1 . a third equilateral triangle t 3 is formed by joining the mid - points of t 2 and this process is continued indefinitely . if each side of t 1 is 60 cm , find the sum of the perimeters of all the triangles .",360.0,"n0 = 2.0
+n1 = 1.0
+n2 = 3.0
+n3 = 2.0
+n4 = 1.0
+n5 = 60.0
+t0 = n5 + n5 + n5  # perimeter of a triangle
+answer = t0 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the area of a parallelogram is 128 sq m . then the area of a triangle formed by its diagonal is - - - - - - - - - - ?,64.0,"n0 = 128.0
+
+answer = n0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a rectangle the length of which is 8 inches and the width of which is 6 inches is made up 48 1 inch by 1 inch squares . through how many of the squares does a diagonal of the rectangle pass ?,12.0,"n0 = 8.0
+n1 = 6.0
+n2 = 48.0
+n3 = 1.0
+n4 = 1.0
+t0 = n0 + n1
+answer = t0 - 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if the diameter of circle r is 60 % of the diameter of circle s , the area of circle r is what percent of the area of circle s ?",36.0,"import math
+n0 = 60.0
+t0 = math.pi * n0**2
+t1 = math.pi * 100.0**2
+t2 = t0 * 100.0
+answer = t2 / t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the area of a rectangular plot is 360 square metres . if the length is 25 % less than the breadth , what is the breadth of the plot ?",21.908902300206645,"import math
+n0 = 360.0
+n1 = 25.0
+t0 = n1 / 100.0
+t1 = 1.0 - t0
+t2 = n0 / t1
+answer = math.sqrt(max(0, t2))
+print(answer)",MathQA_Geometry
+Geometry,geometry,how much greater is the combined area in square inches of the front and back of a rectangular sheet of paper measuring 11 inches by 13 inches than that of a rectangular sheet of paper measuring 6.5 inches by 11 inches ?,100.0,"n0 = 11.0
+n1 = 13.0
+n2 = 6.5
+n3 = 11.0
+t0 = n0 * n1  # area of rectangle
+t1 = n0 * n2  # area of rectangle
+t2 = t0 * 2.0
+t3 = t1 * 2.0
+t4 = t2 - t3
+t5 = t4 / t0
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if g is the smallest positive integer such that 3150 multiplied by g is the square of an integer , then g must be",14.0,"n0 = 3150.0
+t0 = 2.0 + 3.0
+t1 = n0 / 2.0
+t2 = t1 / t0
+t3 = t2 / t0
+t4 = t3 / 3.0
+t5 = t4 / 3.0
+answer = t5 * 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the width of a rectangular hall is ½ of its length . if the area of the hall is 288 sq . m , what is the difference between its length and breadth ?",12.0,"import math
+n0 = 288.0
+t0 = 1.0 / 2.0
+t1 = n0 / t0
+t2 = math.sqrt(max(0, t1))
+answer = t2 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the slant height of a right circular cone is 10 m and its height is 8 m . find the area of its curved surface .,60.0,"import math
+n0 = 10.0
+n1 = 8.0
+t0 = n0**min(2.0, 5)
+t1 = n1**min(2.0, 5)
+t2 = t0 - t1
+t3 = math.sqrt(max(0, t2))
+answer = n0 * t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,"hall is 15 m long and 12 m broad . if the sum of the areas of the floor and the ceiling is equal to the sum of the areas of four walls , the volume of the hall is :",1200.0,"n0 = 15.0
+n1 = 12.0
+t0 = n0 + n1
+t1 = n0 * n1
+t2 = t1 * 2.0
+t3 = t0 * 2.0
+t4 = t2 / t3
+answer = t4 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a cube of edge 12 cm is immersed completely in a rectangular vessel containing water . if the dimensions of the base of vessel are 20 cm * 15 cm , find the rise in water level ?",5.76,"n0 = 12.0
+n1 = 20.0
+n2 = 15.0
+t0 = n1 * n2
+t1 = n0**3
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a circular wire of radius 42 cm is cut and bent into the form of a rectangle whose sides are in the ratio of 6 : 5 . the smaller side of the rectangle is :,59.975859750350594,"import math
+n0 = 42.0
+n1 = 6.0
+n2 = 5.0
+t0 = n1 + n2
+t1 = 2 * math.pi * n0
+t2 = t0 * 2.0
+t3 = t1 / t2
+answer = n2 * t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,the diagonal of the floor of a rectangular closet is 7 feet . the shorter side of the closet is 4 feet . what is the area of the closet in square feet ?,27.0,"import math
+n0 = 7.0
+n1 = 4.0
+t0 = 2.0 * 4.0
+t1 = n0 * 2.0
+t2 = t0 + 1.0
+t3 = t1 + 1.0
+t4 = t2 / 2.0
+t5 = t3 / 2.0
+t6 = t5**min(2.0, 5)
+t7 = t4**min(2.0, 5)
+t8 = t6 - t7
+t9 = math.sqrt(max(0, t8))
+answer = t4 * t9  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a crate measures 3 feet by 8 feet by 12 feet on the inside . a stone pillar in the shape of a right circular cylinder must fit into the crate for shipping so that it rests upright when the crate sits on at least one of its six sides . what is the radius , in feet , of the pillar with the largest volume that could still fit in the crate ?",3.0,"n0 = 3.0
+n1 = 8.0
+n2 = 12.0
+t0 = n1 * n2
+t1 = n0 * t0
+t2 = t1 / n2
+answer = t2 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if each side of a right triangle is increased by 10 % and the base ( b ) is half of the height , find the percentage change in its area ?",21.000000000000018,"n0 = 10.0
+t0 = n0 + 100.0
+t1 = t0 / 100.0
+t2 = t1**min(2.0, 5)
+t3 = t2 - 1.0
+answer = t3 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"32 meters of wire is available to fence off a flower bed in the form of a circular sector . what must the radius of the circle in meters be , if we wish to have a flower bed with the greatest possible surface area ?",8.0,"n0 = 32.0
+
+answer = n0 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a rectangular floor that measures 24 meters by 64 meters is to be covered with carpet squares that each measure 8 meters by 8 meters . if the carpet squares cost $ 24 apiece , what is the total cost for the number of carpet squares needed to cover the floor ?",576.0,"n0 = 24.0
+n1 = 64.0
+n2 = 8.0
+n3 = 8.0
+n4 = 24.0
+
+answer = n0 * n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the side of a cube is 12 m , find the lateral surface area ?",516.0,"n0 = 12.0
+t0 = 10.0 * 4.0
+t1 = t0 + 3.0
+answer = n0 * t1  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a rectangular field is to be fenced on three sides leaving a side of 20 feet uncovered . if the area of the field is 60 sq . feet , how many feet of fencing will be required ?",26.0,"n0 = 20.0
+n1 = 60.0
+t0 = n1 / n0
+t1 = t0 * 2.0
+answer = n0 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if the volume of a cube is x ^ 3 cubic units , what is the number of square units in the surface area of the cube ?",6.0,"n0 = 3.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 1.0
+answer = t0 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a metallic sheet is of rectangular shape with dimensions 48 m x 38 m . from each of its corners , a square is cut off so as to make an open box . if the length of the square is 8 m , the volume of the box ( in m 3 ) is :",5632.0,"n0 = 48.0
+n1 = 38.0
+n2 = 8.0
+n3 = 3.0
+t0 = n2 * 2.0
+t1 = n0 - t0
+t2 = n1 - t0
+answer = n2 * t1 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the sides of a square region , measured to the nearest centimeter , are 10 centimeters long . the least possible value of the actual area of the square region is",90.25,"n0 = 10.0
+t0 = n0 - 0.25
+t1 = t0 - 0.25
+answer = t1**min(2.0, 5)
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the volume of a certain substance is always directly proportional to its weight . if 48 cubic inches of the substance weigh 112 ounces , what is the volume , in cubic inches , of 84 ounces of this substance ?",36.0,"n0 = 48.0
+n1 = 112.0
+n2 = 84.0
+t0 = n0 / n1
+answer = n2 * t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the base and height of a parallelogram are 12 m and 6 m respectively . then its area is = = = = = = ?,72.0,"n0 = 12.0
+n1 = 6.0
+
+answer = n0 * n1  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a certain farmer pays $ 60 per acre per month to rent farmland . how much does the farmer pay per month to rent a rectangular plot of farmland that is 360 feet by 1210 feet ? ( 43,560 square feet = 1 acre )",600.0,"n0 = 60.0
+n1 = 360.0
+n2 = 1210.0
+n3 = 43560.0
+n4 = 1.0
+t0 = n1 * n2
+t1 = t0 / 10.0
+t2 = t0 / t1
+answer = n0 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,find the area of a parallelogram with base 26 cm and height 14 cm ?,364.0,"n0 = 26.0
+n1 = 14.0
+
+answer = n0 * n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"thin rectangular slab of potato was cut into two pieces for an osmosis lab . one piece is 50 mm greater than the other . if the original uncut slab is 600 mm , what is the length of the other piece of the potato after it is cut .",275.0,"n0 = 50.0
+n1 = 600.0
+t0 = n1 - n0
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a cubic object 3 ' ' x 3 ' ' x 3 ' ' is painted blue on all the outside surfaces , including the top and bottom . if the cube is cut into 27 cubes of 1 ' ' x 1 ' ' x 1 ' ' , how many 1 ' ' cubes do have any painted surfaces ?",26.0,"n0 = 3.0
+n1 = 3.0
+n2 = 3.0
+n3 = 27.0
+n4 = 1.0
+n5 = 1.0
+n6 = 1.0
+n7 = 1.0
+
+answer = n3 - 1.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the area of a square is 144 m ² . find its perimeter .,48.0,"import math
+n0 = 144.0
+t0 = math.sqrt(max(0, n0))
+answer = 4 * t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"huey ' s hip pizza sells two sizes of square pizzas : a small pizza that measures 14 inches on a side and costs $ 10 , and a large pizza that measures 21 inches on a side and costs $ 20 . if two friends go to huey ' s with $ 30 apiece , how many more square inches of pizza can they buy if they pool their money than if they each purchase pizza alone ?",49.0,"n0 = 14.0
+n1 = 10.0
+n2 = 21.0
+n3 = 20.0
+n4 = 30.0
+t0 = n2**min(2.0, 5)
+t1 = n0**min(2.0, 5)
+t2 = t1 + t0
+t3 = t0 * 3.0
+t4 = t2 + t2
+answer = t3 - t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,what is the area of square field whose side of length 17 m ?,289.0,"n0 = 17.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,a spirit and water solution is sold in a market . the cost per liter of the solution is directly proportional to the part ( fraction ) of spirit ( by volume ) the solution has . a solution of 1 liter of spirit and 1 liter of water costs 30 cents . how many cents does a solution of 1 liter of spirit and 2 liters of water cost ?,30.0,"n0 = 1.0
+n1 = 1.0
+n2 = 30.0
+n3 = 1.0
+n4 = 2.0
+t0 = n0 + n4
+t1 = n0 / t0
+t2 = n2 * t1
+answer = t0 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a rectangular grass field is 75 m * 55 m , it has a path of 2.8 m wide all round it on the outside . find the area of the path and the cost of constructing it at rs . 2 per sq m ?",1518.7199999999991,"n0 = 75.0
+n1 = 55.0
+n2 = 2.8
+n3 = 2.0
+t0 = n2 * n3
+t1 = n0 * n1  # area of rectangle
+t2 = n0 + t0
+t3 = n1 + t0
+t4 = t2 * t3  # area of rectangle
+t5 = t4 - t1
+answer = n3 * t5
+print(answer)",MathQA_Geometry
+Geometry,geometry,the length of a rectangle is increased by 45 % and its breadth is decreased by 20 % . what is the effect on its area ?,11600.0,"n0 = 45.0
+n1 = 20.0
+t0 = n0 + 100.0
+t1 = 100.0 - n1
+answer = t0 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"12 business executives and 7 chairmen meet at a conference . if each business executive shakes the hand of every other business executive and every chairman once , and each chairman shakes the hand of each of the business executives but not the other chairmen , how many handshakes would take place ?",150.0,"n0 = 12.0
+n1 = 7.0
+t0 = n0 * n1
+t1 = n0 - 1.0
+t2 = n0 * t1
+t3 = t2 / 2.0
+answer = t3 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,30 square stone slabs of equal size were needed to cover a floor area of 67.5 sq . m . find the length of each stone slab ?,150.0,"import math
+n0 = 30.0
+n1 = 67.5
+t0 = n1 / n0
+t1 = math.sqrt(max(0, t0))
+answer = t1 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the perimeter of an isosceles right triangle is 8 + 8 sq rt 2 . what is the length of the hypotenuse of the triangle ?,5.6568542494923815,"import math
+n0 = 8.0
+n1 = 8.0
+n2 = 2.0
+t0 = math.sqrt(max(0, n2))
+t1 = n0 * t0
+answer = t1 / n2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if the area of a square with sides of length 12 centimeters is equal to the area of a rectangle with a width of 6 centimeters , what is the length of the rectangle , in centimeters ?",24.0,"n0 = 12.0
+n1 = 6.0
+t0 = n0**min(2.0, 5)
+answer = t0 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,the area of a rectangular field is equal to 300 square meters . its perimeter is equal to 70 meters . find the width of this rectangle .,15.0,"import math
+n0 = 300.0
+n1 = 70.0
+t0 = n1 / 2.0
+t1 = n0 * 4.0
+t2 = t0 * t0
+t3 = t2 - t1
+t4 = math.sqrt(max(0, t3))
+t5 = t0 - t4
+answer = t5 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in a rectangular coordinate system , what is the area of a rhombus whose vertices have the coordinates ( 0 , 4.5 ) , ( 8 , 0 ) , ( 0 , - 4.5 ) , ( - 8 , 0 ) ?",72.0,"n0 = 0.0
+n1 = 4.5
+n2 = 8.0
+n3 = 0.0
+n4 = 0.0
+n5 = 4.5
+n6 = 8.0
+n7 = 0.0
+t0 = n2 * 2.0
+t1 = n1 * 2.0
+answer = t0 * t1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,the diagonals of a rhombus are 14 cm and 18 cm . find its area ?,126.0,"n0 = 14.0
+n1 = 18.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,a rectangular swimming pool is 10 feet by 12 feet . a deck that has uniform width surrounds the pool . the total area of the pool and deck is 360 square feet . what is the width of the deck ?,4.0,"import math
+n0 = 10.0
+n1 = 12.0
+n2 = 360.0
+t0 = n0 * n1  # area of rectangle
+t1 = n1 - 1.0
+t2 = t1**min(2.0, 5)
+t3 = n2 - t0
+t4 = t2 + t3
+t5 = math.sqrt(max(0, t4))
+t6 = t5 - t1
+answer = t6 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the length of a rectangle is reduced by 22 % . by what % would the width have to be increased to maintainthe original area ?,28.2051282051282,"n0 = 22.0
+t0 = 100.0 - n0
+t1 = t0 / 100.0
+t2 = 1.0 - t1
+t3 = t2 / t1
+answer = t3 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"how many diagonals does a polygon with 19 sides have , if one of its vertices does not connect to any diagonal ?",135.0,"n0 = 19.0
+t0 = n0 - 1.0
+t1 = t0 - 3.0
+t2 = t0 * t1
+answer = t2 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the surface area of a sphere is 4 π r 2 , where r is the radius of the sphere . if the area of the base of a hemisphere is 3 , what is the surface area r of that hemisphere ?",9.0,"n0 = 4.0
+n1 = 2.0
+n2 = 3.0
+t0 = n2 / 3.141592653589793
+t1 = n0 * 3.141592653589793
+t2 = t0 * t1
+t3 = t0 * 3.141592653589793
+t4 = t2 / n1
+answer = t4 + t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,the diagonals of a rhombus are 25 cm and 30 cm . find its area ?,375.0,"n0 = 25.0
+n1 = 30.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,the length of a rectangle hall is 5 m more than its breadth . the area of the hall is 750 m 2 . the length of the hall is :,30.0,"n0 = 5.0
+n1 = 750.0
+n2 = 2.0
+t0 = n1 / n0
+answer = t0 / n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a lady grows cabbage in her garden that is in the shape of a square . each cabbage takes 1 square foot of area in her garden . this year , she has increased her output by 211 cabbages when compared to last year . the shape of the area used for growing the cabbage has remained a square in both these years . how many cabbages did she produce this year ?",11236.0,"n0 = 1.0
+n1 = 211.0
+t0 = n1 - n0
+t1 = t0 / 2.0
+t2 = n0 + t1
+answer = t2**min(2.0, 5)
+print(answer)",MathQA_Geometry
+Geometry,geometry,the diagonals of a rhombus are 15 cm and 17 cm . find its area ?,127.5,"n0 = 15.0
+n1 = 17.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a rectangular field is to be fenced on three sides leaving a side of 20 feet uncovered . if the area of the field is 440 sq . feet , how many feet of fencing will be required ?",64.0,"n0 = 20.0
+n1 = 440.0
+t0 = n1 / n0
+t1 = t0 * 2.0
+answer = n0 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,the radius of a sphere is increased by 50 % . the increase in surface area of the sphere is :,125.0,"import math
+n0 = 50.0
+t0 = n0 / 100.0
+t1 = 4 * math.pi * 1.0**2
+t2 = t0 + 1.0
+t3 = 4 * math.pi * t2**2
+t4 = t3 - t1
+t5 = t4 / t1
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a cube of edge 15 cm is imersed completely in a rectangular vessel containing water . if the dimensions of the base of vessel are 20 cm * 15 cm , find the rise in waer level .",11.25,"n0 = 15.0
+n1 = 20.0
+n2 = 15.0
+t0 = n0 * n1
+t1 = n0**3
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in measuring the sides of a rectangle , one side is taken 9 % in excess , and the other 8 % in deficit . find the error percent in the area calculated from these measurements .",0.28,"n0 = 9.0
+n1 = 8.0
+t0 = n0 * n1
+t1 = n0 - n1
+t2 = t0 / 100.0
+answer = t1 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"right triangle pqr is to be constructed in the xy - plane so that the right angle is at p and pr is parallel to the x - axis . the x and y coordinates of p , q and r are to be integers that satisfy the inequalitites - 4 ≤ x ≤ 5 and 6 ≤ y ≤ 16 . how many different triangles with these properties could be constructed ?",9900.0,"n0 = 4.0
+n1 = 5.0
+n2 = 6.0
+n3 = 16.0
+t0 = n0 + n2
+t1 = n3 - n1
+t2 = 10.0 - 1.0
+t3 = t0 * t1
+t4 = t3 * t2
+answer = t4 * 10.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"an equilateral triangle t 2 is formed by joining the mid points of the sides of another equilateral triangle t 1 . a third equilateral triangle t 3 is formed by joining the mid - points of t 2 and this process is continued indefinitely . if each side of t 1 is 50 cm , find the sum of the perimeters of all the triangles .",300.0,"n0 = 2.0
+n1 = 1.0
+n2 = 3.0
+n3 = 2.0
+n4 = 1.0
+n5 = 50.0
+t0 = n5 + n5 + n5  # perimeter of a triangle
+answer = t0 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"if the sides of a triangle are 39 cm , 32 cm and 10 cm , what is its area ?",160.0,"n0 = 39.0
+n1 = 32.0
+n2 = 10.0
+t0 = n1 * n2
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the perimeter of an isosceles right triangle is 12 + 12 sq rt 2 . what is the length of the hypotenuse of the triangle ?,8.485281374238571,"import math
+n0 = 12.0
+n1 = 12.0
+n2 = 2.0
+t0 = math.sqrt(max(0, n2))
+t1 = n0 * t0
+answer = t1 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a equilateral triangle having one side 5 m . in this triangle there is a square of side 2 m . calculate the percentage of area outside square in that triangle .,63.04958277186395,"import math
+n0 = 5.0
+n1 = 2.0
+t0 = n0**min(2.0, 5)
+t1 = math.sqrt(max(0, 3.0))
+t2 = n1**2
+t3 = t1 / 4.0
+t4 = t3 * t0
+t5 = t4 - t2
+t6 = t5 / t4
+answer = t6 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,carmen made a sculpture from small pieces of wood . the sculpture is 2 feet 10 inches tall . carmen places her sculpture on a base that is 4 inches tall . how tall are the sculpture andbase together ?,3.166666666666666,"n0 = 2.0
+n1 = 10.0
+n2 = 4.0
+t0 = n0 + n1
+t1 = n0 * t0
+t2 = t1 + 10.0
+t3 = n2 + t2
+answer = t3 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,find the perimeter and area of a square of side 9 cm .,81.0,"n0 = 9.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in a rectangular coordinate system , what is the area of a rhombus whose vertices have the coordinates ( 0 , 5.5 ) , ( 8 , 0 ) , ( 0 , - 5.5 ) , ( - 8 , 0 ) ?",88.0,"n0 = 0.0
+n1 = 5.5
+n2 = 8.0
+n3 = 0.0
+n4 = 0.0
+n5 = 5.5
+n6 = 8.0
+n7 = 0.0
+t0 = n2 * 2.0
+t1 = n1 * 2.0
+answer = t0 * t1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,the area of a circle is increased by 300 % . by what percent has the diameter of the circle increased ?,100.0,"n0 = 300.0
+t0 = 2.0 / 2.0
+answer = t0 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,the length of the rectangular field is double its width . inside the field there is square shaped pond 5 m long . if the area of the pond is 1 / 8 of the area of the field . what is the length of the field ?,20.0,"import math
+n0 = 5.0
+n1 = 1.0
+n2 = 8.0
+t0 = 1 / 2.0
+t1 = n0**2
+t2 = n2 * t1
+t3 = t2 / t0
+answer = math.sqrt(max(0, t3))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in a new housing development , trees are to be planted along the sidewalk of a certain street . each tree takes up one square foot of sidewalk space , and there are to be 20 feet between each tree . how many trees can be planted if the road is 148 feet long ?",8.0,"n0 = 20.0
+n1 = 148.0
+t0 = n0 + 1.0
+t1 = n1 - 1.0
+t2 = t1 / t0
+answer = t2 + 1.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the length of a rectangular field is 7 / 5 its width . if the perimeter of the field is 384 meters , what is the width of the field ?",80.0,"n0 = 7.0
+n1 = 5.0
+n2 = 384.0
+t0 = n0 / n1
+t1 = t0 + t0
+t2 = t1 + 2.0
+answer = n2 / t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,the surface area of a sphere is same as the curved surface area of a right circular cylinder whose height and diameter are 12 cm each . the radius of the sphere is :,6.0,"import math
+n0 = 12.0
+t0 = n0 / 2.0
+t1 = 4.0 * 3.141592653589793
+t2 = n0 * t0
+t3 = t2 * 3.141592653589793
+t4 = t3 * 2.0
+t5 = t4 / t1
+answer = math.sqrt(max(0, t5))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a crate measures 7 feet by 8 feet by 12 feet on the inside . a stone pillar in the shape of a right circular cylinder must fit into the crate for shipping so that it rests upright when the crate sits on at least one of its six sides . what is the radius , in feet , of the pillar with the largest volume that could still fit in the crate ?",7.0,"n0 = 7.0
+n1 = 8.0
+n2 = 12.0
+t0 = n1 * n2
+t1 = n0 * t0
+t2 = t1 / n2
+answer = t2 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,a semicircle has a radius of 14 . what is the approximate perimeter of the semicircle ?,71.9822971502571,"import math
+n0 = 14.0
+t0 = 2 * math.pi * n0
+t1 = n0 * 2.0
+t2 = t0 / 2.0
+answer = t2 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"four circular cardboard pieces , each of radius 7 cm are placed in such a way that each piece touches two other pieces . the area of the space encosed by the four pieces is. four circular cardboard pieces , each of radius 7 cm are placed in such a way that each piece touches two other pieces . the area of the space encosed by the four pieces is",42.06195997410015,"n0 = 7.0
+n1 = 7.0
+t0 = n0 * 2.0
+t1 = n0**min(2.0, 5)
+t2 = t1 * 3.141592653589793
+t3 = t0**min(2.0, 5)
+answer = t3 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the ratio of the areas of two squares , one having double its diagonal then the other is :",4.0,"t0 = 1 / 2.0
+t1 = t0 * 4.0
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,if abc is a quarter circle and a smaller circle is inscribed in it ; if radius of quarter circle is 1.414 units . find the radius of smaller circle,0.5860000000000001,"n0 = 1.414
+
+answer = 2.0 - n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,find the surface area of a 8 cm x 6 cm x 2 cm brick .,152.0,"n0 = 8.0
+n1 = 6.0
+n2 = 2.0
+
+answer = 2 * (n0 * n1 + n0 * n2 + n1 * n2)  # surface of a rectangular prism
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in measuring the sides of a rectangle , one side is taken 5 % in excess , and the other 4 % in deficit . find the error percent in the error percent in the area calculated from these measurements .",0.8,"n0 = 5.0
+n1 = 4.0
+t0 = n0 * n1
+t1 = n0 - n1
+t2 = t0 / 100.0
+answer = t1 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"the length of rectangle is thrice its breadth and its perimeter is 120 m , find the area of the rectangle ?",675.0,"n0 = 120.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 2.0
+t2 = t0 + t1
+t3 = n0 / t2
+t4 = t3 * 3.0
+answer = t3 * t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,the length and breadth of a square are increased by 40 % and 30 % respectively . the area of the rectangle so formed exceeds the area of the square by ?,81.99999999999999,"n0 = 40.0
+n1 = 30.0
+t0 = n0 / 100.0
+t1 = n1 / 100.0
+t2 = t0 + 1.0
+t3 = t1 + 1.0
+t4 = t2 * t3
+t5 = t4 - 1.0
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"while visiting a small town in the united states , i lost my overcoat in a bus . when i reported the matter to the bus company i was asked the number of the bus . though i did not remember the exact number i did remember that the bus number bad a certain peculiarity about it . the number plate showed the bus number as a perfect square and also if the plate was turned upside down . ? the number would still be a perfect square — of course it was not ? i came to know from the bus company they had only 5 100 buses numbered from 1 to 500 . from this i was able to deduce the bus number . can you tell what was the other number .",196.0,"n0 = 5.0
+n1 = 100.0
+n2 = 1.0
+n3 = 500.0
+t0 = n1 - 4.0
+answer = t0 + 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,a horse is tethered to one corner of a rectangular grassy field 45 m by 25 m with a rope 22 m long . over how much area of the field can it graze ?,380.132711084365,"n0 = 45.0
+n1 = 25.0
+n2 = 22.0
+t0 = n2**min(2.0, 5)
+t1 = t0 * 3.141592653589793
+answer = t1 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"a rectangular courty 3.78 metres long and 5.25 metres wide is to be paved exactly with square tiles , all of the same size . what is the largest size of the tile which could be used for the purpose ?",21.0,"n0 = 3.78
+n1 = 5.25
+t0 = n0 * 100.0
+t1 = t0 / 3.0
+t2 = t1 / 3.0
+t3 = t2 / 3.0
+t4 = t3 / 2.0
+answer = t4 * 3.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"four equal circles are described about the four corners of a square so that each touches two of the others . if a side of the square is 14 cm , then the area enclosed between the circumferences of the circles is :",42.06195997410015,"import math
+n0 = 14.0
+t0 = n0 / 2.0
+t1 = n0**2
+t2 = math.pi * t0**2
+answer = t1 - t2
+print(answer)",MathQA_Geometry
