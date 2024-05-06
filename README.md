@@ -28,6 +28,7 @@ We adhered to rigorous criteria to ensure the dataset's relevance and quality:
 
 - Language: English-only to maintain consistency across data.
 - Educational Level: Suitable for elementary school math levels.
+- Content Type: Focused exclusively on text-based datasets, avoiding any that include pictures or additional multimedia sources to ensure straightforward analysis.
 
 # Dataset Overview
 
@@ -101,7 +102,7 @@ In constructing this dataset, we made a concerted effort to include a comprehens
             <td>log 10(797)=</td>
         </tr>
         <tr>
-            <td rowspan="15"><a href="https://github.com/google-deepmind/mathematics_dataset">Mathematics</a></td>
+            <td rowspan="15"><a href="https://github.com/google-deepmind/mathematics_dataset">Mathematics Dataset (Google Deepmin)</a></td>
             <td><code>add_or_sub</code></td>
             <td>64</td>
             <td>What is -6.5 + -1.5?</td>
