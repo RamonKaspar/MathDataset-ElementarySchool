@@ -75,6 +75,10 @@ The datasets are versioned into three types for each category:
 
 For ease of access, the complete datasets for smaller samples (`<category>_1000.csv/json` and `<category>_100.csv/json`) are directly accessible within this repository in the data directory.
 
+## Translation to German
+
+We have utilized the `DeepL API` for high-quality, free translations of selected datasets into German. For access to the data and more details about the translation process, please visit the `translation-to-german` folder.
+
 ## Exploring the Dataset
 
 A nice overview of all available datasets in the mathematical domain can be found in [Lu et al, 2023](https://arxiv.org/abs/2212.10535) and in [Ahn et al., 2024](https://arxiv.org/abs/2402.00157).
