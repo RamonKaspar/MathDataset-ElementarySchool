@@ -19,6 +19,9 @@ def csv_to_json(input_path, output_path):
     df.to_json(output_path, orient='records')
 
 if __name__ == "__main__":
+    
+    # NOTE: I think "\n" was not properly translated!!
+    
     # Translate to German
     input_path = "../data/I_Arithmetic/arithmetic_100.csv"
     output_path = "arithmetic_100_german.csv"

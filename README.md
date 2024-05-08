@@ -12,7 +12,7 @@ We followed a methodical approach to construct this dataset:
 
 - **Compilation and Sampling:** We combined and randomly sampled from exisitng datasets to create a diverse collection that accurately mirrors the types of math challenges faced by 10-year-olds.
 
-## Classification
+## Categorization
 
 Our dataset categorizes mathematical questions into three groups:
 
@@ -29,6 +29,7 @@ We adhered to rigorous criteria to ensure the dataset's relevance and quality:
 - Language: English-only to maintain consistency across data.
 - Educational Level: Suitable for elementary school math levels.
 - Content Type: Focused exclusively on text-based datasets, avoiding any that include pictures or additional multimedia sources to ensure straightforward analysis.
+- Single Float Answer: The answer to each question is a single float value. This ensures easy evaluation.
 
 # Dataset Overview
 
@@ -79,6 +80,93 @@ For ease of access, the complete datasets for smaller samples (`<category>_1000.
 
 We have utilized the `DeepL API` for high-quality, free translations of selected datasets into German. For access to the data and more details about the translation process, please visit the `translation-to-german` folder.
 
+## Oerview of the different dataset versions
+
+This table gives an overview of the different dataset versions.
+
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th colspan="4"><h3>I. Arithmetic</h3></th>
+        </tr>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Number of subcategories</strong></th>
+            <th><strong>Size</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>arithmetic_complete</td>
+            <td>14</td>
+            <td>7'731'654</td>
+        </tr>
+        <tr>
+            <td>arithmetic_1000</td>
+            <td>14</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>arithmetic_100</td>
+            <td>14</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="4"><h3>II. Word Problems</h3></th>
+        </tr>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Number of subcategories</strong></th>
+            <th><strong>Size</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>wordProblems_complete</td>
+            <td>3</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>wordProblems_1000</td>
+            <td>3</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>wordProblems_100</td>
+            <td>3</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th colspan="4"><h3>III. Geometry</h3></th>
+        </tr>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Number of subcategories</strong></th>
+            <th><strong>Size</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>geometry_complete</td>
+            <td>1</td>
+            <td>Many</td>
+        </tr>
+        <tr>
+            <td>geometry_1000</td>
+            <td>1</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>geometry_100</td>
+            <td>1</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+
 ## Exploring the Dataset
 
 A nice overview of all available datasets in the mathematical domain can be found in [Lu et al, 2023](https://arxiv.org/abs/2212.10535) and in [Ahn et al., 2024](https://arxiv.org/abs/2402.00157).
@@ -102,83 +190,73 @@ In constructing this dataset, we made a concerted effort to include a comprehens
         <tr>
             <td><a href="https://github.com/GanjinZero/math401-llm">Math-401</a></td>
             <td><code>arithmetic_mixed</code></td>
-            <td>63</td>
+            <td>71</td>
             <td>log 10(797)=</td>
         </tr>
         <tr>
             <td rowspan="15"><a href="https://github.com/google-deepmind/mathematics_dataset">Mathematics Dataset (Google Deepmin)</a></td>
             <td><code>add_or_sub</code></td>
-            <td>64</td>
+            <td>71</td>
             <td>What is -6.5 + -1.5?</td>
         </tr>
         <tr>
             <td><code>add_sub_multiple</code></td>
-            <td>62</td>
+            <td>71</td>
             <td>Calculate -4 + 0 - ((-3 - -1) + 7).</td>
         </tr>
         <tr>
             <td><code>conversion</code></td>
-            <td>62</td>
+            <td>71</td>
             <td>What is three eighths of a kilogram in grams?</td>
         </tr>
         <tr>
             <td><code>div</code></td>
-            <td>62</td>
+            <td>71</td>
             <td>Calculate -238 divided by -3.</td>
         </tr>
         <tr>
             <td><code>div_remainder</code></td>
-            <td>63</td>
+            <td>73</td>
             <td>What is the remainder when 255 is divided by 20?</td>
         </tr>
         <tr>
             <td><code>gcd</code></td>
-            <td>62</td>
+            <td>72</td>
             <td>What is the highest common divisor of 75 and 390?</td>
         </tr>
         <tr>
             <td><code>lcm</code></td>
-            <td>62</td>
+            <td>72</td>
             <td>Calculate the lowest common multiple of 1355 and 80.</td>
         </tr>
         <tr>
-            <td><code>list_prime_factors</code></td>
-            <td>63</td>
-            <td>List the prime factors of 1125.</td>
-        </tr>
-        <tr>
             <td><code>mul</code></td>
-            <td>63</td>
+            <td>72</td>
             <td>Multiply -0.0756 and 0.14.</td>
         </tr>
         <tr>
             <td><code>mul_div_multiple</code></td>
-            <td>63</td>
+            <td>71</td>
             <td>Evaluate 2/(-6)*(-120)/(-80).</td>
         </tr>
         <tr>
             <td><code>place_value</code></td>
-            <td>62</td>
+            <td>71</td>
             <td>What is the tens digit of 5546?</td>
         </tr>
         <tr>
             <td><code>round_number</code></td>
-            <td>63</td>
+            <td>71</td>
             <td>Round 4117.6 to the nearest 10.</td>
         </tr>
         <tr>
             <td><code>sequence_next_term</code></td>
-            <td>63</td>
+            <td>72</td>
             <td>What comes next: -75, -80, -85, -90?</td>
         </tr>
         <tr>
-            <td><code>sort</code></td>
-            <td>62</td>
-            <td>Sort -52, 2, -4, 3, -5 in descending order.</td>
-        </tr>
-        <tr>
             <td><code>time</code></td>
-            <td>62</td>
+            <td>71</td>
             <td>How many minutes are there between 1:03 PM and 9:11 PM?</td>
         </tr>
         <tr>
