@@ -63,7 +63,7 @@ Example Entry (from the SVAMP dataset):
 
 ### Directory Structure & Data Management
 
-All data files and scripts are hosted on our Google Drive, available for download [here](https://drive.google.com/drive/folders/104Vp0L2E1TPfKkVW1SJdrAyHiYLVHhRm?usp=sharing). To conserve space and facilitate easier downloading, all resources are compiled into a `data.zip` file. The contents of the zip file are organized as follows:
+Some of files were to big for GitHub, therefore: All data files and scripts are hosted on our Google Drive, available for download [here](https://drive.google.com/drive/folders/104Vp0L2E1TPfKkVW1SJdrAyHiYLVHhRm?usp=sharing). To conserve space and facilitate easier downloading, all resources are compiled into a `data.zip` file. The contents of the zip file are organized as follows:
 
 - `original-data:` Contains the original datasets in various formats as they were collected.
 - `original-data-transformed:` Includes datasets that have been transformed into the unified structure described in our documentation.
@@ -84,88 +84,91 @@ We have utilized the `DeepL API` for high-quality, free translations of selected
 
 This table gives an overview of the different dataset versions.
 
-<table border="1" style="border-collapse: collapse; width: 100%;">
-    <thead>
-        <tr>
-            <th colspan="4"><h3>I. Arithmetic</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>arithmetic_complete</td>
-            <td>14</td>
-            <td>7'731'654</td>
-        </tr>
-        <tr>
-            <td>arithmetic_1000</td>
-            <td>14</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>arithmetic_100</td>
-            <td>14</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="4"><h3>II. Word Problems</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>wordProblems_complete</td>
-            <td>3</td>
-            <td>1995</td>
-        </tr>
-        <tr>
-            <td>wordProblems_1000</td>
-            <td>3</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>wordProblems_100</td>
-            <td>3</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="4"><h3>III. Geometry</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>geometry_complete</td>
-            <td>1</td>
-            <td>1698</td>
-        </tr>
-        <tr>
-            <td>geometry_1000</td>
-            <td>1</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>geometry_100</td>
-            <td>1</td>
-            <td>100</td>
-        </tr>
-    </tbody>
+<div style="width: 100%; display: flex; justify-content: center;">
+    <table border="1" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="4"><h3>I. Arithmetic</h3></th>
+            </tr>
+            <tr>
+                <th><strong>Name</strong></th>
+                <th><strong>Number of subcategories</strong></th>
+                <th><strong>Size</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>arithmetic_complete</td>
+                <td>14</td>
+                <td>7'731'654</td>
+            </tr>
+            <tr>
+                <td>arithmetic_1000</td>
+                <td>14</td>
+                <td>1,000</td>
+            </tr>
+            <tr>
+                <td>arithmetic_100</td>
+                <td>14</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="4"><h3>II. Word Problems</h3></th>
+            </tr>
+            <tr>
+                <th><strong>Name</strong></th>
+                <th><strong>Number of subcategories</strong></th>
+                <th><strong>Size</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>wordProblems_complete</td>
+                <td>3</td>
+                <td>1,995</td>
+            </tr>
+            <tr>
+                <td>wordProblems_1000</td>
+                <td>3</td>
+                <td>1,000</td>
+            </tr>
+            <tr>
+                <td>wordProblems_100</td>
+                <td>3</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="4"><h3>III. Geometry</h3></th>
+            </tr>
+            <tr>
+                <th><strong>Name</strong></th>
+                <th><strong>Number of subcategories</strong></th>
+                <th><strong>Size</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>geometry_complete</td>
+                <td>1</td>
+                <td>1,698</td>
+            </tr>
+            <tr>
+                <td>geometry_1000</td>
+                <td>1</td>
+                <td>1,000</td>
+            </tr>
+            <tr>
+                <td>geometry_100</td>
+                <td>1</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## Exploring the Dataset
 
