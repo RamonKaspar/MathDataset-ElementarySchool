@@ -98,17 +98,17 @@ This table gives an overview of the different dataset versions.
         </thead>
         <tbody>
             <tr>
-                <td>arithmetic_complete</td>
+                <td><code>arithmetic_complete</code></td>
                 <td>14</td>
                 <td>7'731'654</td>
             </tr>
             <tr>
-                <td>arithmetic_1000</td>
+                <td><code>arithmetic_1000</code></td>
                 <td>14</td>
                 <td>1,000</td>
             </tr>
             <tr>
-                <td>arithmetic_100</td>
+                <td><code>arithmetic_100</code></td>
                 <td>14</td>
                 <td>100</td>
             </tr>
@@ -125,17 +125,17 @@ This table gives an overview of the different dataset versions.
         </thead>
         <tbody>
             <tr>
-                <td>wordProblems_complete</td>
+                <td><code>wordProblems_complete</code></td>
                 <td>3</td>
                 <td>1,995</td>
             </tr>
             <tr>
-                <td>wordProblems_1000</td>
+                <td><code>wordProblems_1000</code></td>
                 <td>3</td>
                 <td>1,000</td>
             </tr>
             <tr>
-                <td>wordProblems_100</td>
+                <td><code>wordProblems_100</code></td>
                 <td>3</td>
                 <td>100</td>
             </tr>
@@ -152,17 +152,17 @@ This table gives an overview of the different dataset versions.
         </thead>
         <tbody>
             <tr>
-                <td>geometry_complete</td>
+                <td><code>geometry_complete</code></td>
                 <td>1</td>
                 <td>1,698</td>
             </tr>
             <tr>
-                <td>geometry_1000</td>
+                <td><code>geometry_1000</code></td>
                 <td>1</td>
                 <td>1,000</td>
             </tr>
             <tr>
-                <td>geometry_100</td>
+                <td><code>geometry_100</code></td>
                 <td>1</td>
                 <td>100</td>
             </tr>
@@ -182,6 +182,8 @@ In constructing this dataset, we made a concerted effort to include a comprehens
         <tr>
             <th colspan="4"><h3>I. Arithmetic</h3></th>
         </tr>
+    </thead>
+    <thead>
         <tr>
             <th><strong>Source</strong></th>
             <th><strong>Subcategory</strong></th>
@@ -197,7 +199,7 @@ In constructing this dataset, we made a concerted effort to include a comprehens
             <td>log 10(797)=</td>
         </tr>
         <tr>
-            <td rowspan="15"><a href="https://github.com/google-deepmind/mathematics_dataset">Mathematics Dataset (Google Deepmin)</a></td>
+            <td rowspan="13"><a href="https://github.com/google-deepmind/mathematics_dataset">Mathematics Dataset (Google Deepmin)</a></td>
             <td><code>add_or_sub</code></td>
             <td>71</td>
             <td>What is -6.5 + -1.5?</td>
@@ -262,15 +264,21 @@ In constructing this dataset, we made a concerted effort to include a comprehens
             <td>71</td>
             <td>How many minutes are there between 1:03 PM and 9:11 PM?</td>
         </tr>
+    </tbody>
+    <thead>
         <tr>
             <th colspan="4"><h3>II. Word Problems</h3></th>
         </tr>
+    </thead>
+    <thead>
         <tr>
             <th><strong>Source</strong></th>
             <th><strong>Subcategory</strong></th>
             <th><strong>Size</strong></th>
             <th><strong>Example</strong></th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td><a href="https://github.com/arkilpatel/SVAMP">SVAMP</a></td>
             <td><code>challenge</code></td>
@@ -289,15 +297,21 @@ In constructing this dataset, we made a concerted effort to include a comprehens
             <td>333</td>
             <td>Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have?</td>
         </tr>
+    </tbody>
+    <thead>
         <tr>
             <th colspan="4"><h3>III. Geometry</h3></th>
         </tr>
+    </thead>
+    <thead>
         <tr>
             <th><strong>Source</strong></th>
             <th><strong>Subcategory</strong></th>
             <th><strong>Size</strong></th>
             <th><strong>Example</strong></th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td><a href="https://allenai.org/data/lila">MathQA Geometry</a></td>
             <td><code>geometry</code></td>
