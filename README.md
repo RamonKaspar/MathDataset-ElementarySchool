@@ -153,7 +153,7 @@ This table gives an overview of the different dataset versions.
         <tr>
             <td>geometry_complete</td>
             <td>1</td>
-            <td>Many</td>
+            <td>1698</td>
         </tr>
         <tr>
             <td>geometry_1000</td>
