@@ -1,0 +1,785 @@
+category,subcategory,question,answer,reasoning,source
+Geometry,geometry,"ein metallisches blech hat eine rechteckige form mit den abmessungen 48 m x 36 m. von jeder seiner ecken wird ein quadrat abgeschnitten, so dass ein offener kasten entsteht. wenn die länge des quadrats 3 m beträgt, ist das volumen des kastens (in m 3) :",3780.0,"n0 = 48.0
+n1 = 36.0
+n2 = 3.0
+n3 = 3.0
+t0 = n2 * 2.0
+t1 = n0 - t0
+t2 = n1 - t0
+answer = n2 * t1 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein Kreisdiagramm zeigt, wie das Budget eines bestimmten Unternehmens ausgegeben wurde: 55 Prozent für Gehälter, 9 Prozent für Forschung und Entwicklung, 5 Prozent für Versorgungsleistungen, 4 Prozent für Ausrüstung, 2 Prozent für Verbrauchsmaterial und der Rest für Transport. Wenn die Fläche jedes Sektors des Diagramms proportional zu dem Prozentsatz des Budgets ist, den er darstellt, wie viele Grad des Kreises werden verwendet, um Transport darzustellen?",90.0,"n0 = 55.0
+n1 = 9.0
+n2 = 5.0
+n3 = 4.0
+n4 = 2.0
+t0 = n0 + n1
+t1 = n2 + t0
+t2 = n3 + t1
+t3 = n4 + t2
+t4 = 100.0 - t3
+t5 = t4 * 360.0
+answer = t5 / 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn eine rechteckige Plakatwand eine Fläche von 91 Quadratfuß und einen Umfang von 40 Fuß hat, wie lang ist dann jede der kürzeren Seiten?",7.0,"import math
+n0 = 91.0
+n1 = 40.0
+t0 = n1 / 2.0
+t1 = n0 * 4.0
+t2 = t0**min(2.0, 5)
+t3 = t2 - t1
+t4 = math.sqrt(max(0, t3))
+t5 = t0 - t4
+answer = t5 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein Volumen von 11248 l Wasser befindet sich in einem Kugelbehälter. Wie viele Halbkugeln mit einem Volumen von je 4 l werden benötigt, um das gesamte Wasser in die kleinen Halbkugeln zu leiten?",2812.0,"n0 = 11248.0
+n1 = 4.0
+
+answer = n0 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein Saal ist 15 m lang und 12 m breit. Wenn die Summe der Flächen des Bodens und der Decke gleich der Summe der Flächen von 4 Wänden ist, ist das Volumen der Halle:",1200.0,"n0 = 15.0
+n1 = 12.0
+t0 = n1 * 2.0
+t1 = n0 * 2.0
+t2 = n0 * n1  # area of rectangle
+t3 = t0 + t1
+t4 = t2 * 2.0
+t5 = t4 / t3
+answer = n0 * n1 * t5
+print(answer)",MathQA_Geometry
+Geometry,geometry,"der parameter eines quadrats ist gleich dem umfang eines rechtecks der länge 20 cm und der breite 14 cm. finden sie den umfang eines halbkreises, dessen durchmesser gleich der seite des quadrats ist. ( runden sie ihre antwort auf zwei dezimalstellen ab )",26.703537555513243,"import math
+n0 = 20.0
+n1 = 14.0
+t0 = 2 * (n0 + n1)  # perimetere of rectangle
+t1 = t0 / 4. # square edge given perimeter
+t2 = t1 / 2.0
+t3 = 2 * math.pi * t2
+answer = t3 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"eine lampe wird auf eine ecke eines quadratischen grundstücks von 50 m länge gestellt. ihr licht erreicht 21 m. wie groß ist die fläche des grundstücks, die von der lampe beleuchtet wird?",346.3605900582747,"import math
+n0 = 50.0
+n1 = 21.0
+t0 = math.pi * n1**2
+answer = t0 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"eine bestimmte rechteckige kiste hat die maße 12 fuß mal 16 fuß mal 18 fuß. ein zylindrischer gasbehälter soll für den versand in der kiste hergestellt werden und aufrecht stehen, wenn die kiste auf eine ihrer sechs seiten gestellt wird. wie groß sollte der radius des tanks sein, wenn er das größtmögliche volumen haben soll?",8.0,"import math
+n0 = 12.0
+n1 = 16.0
+n2 = 18.0
+t0 = n1 / 2.0
+t1 = n0 * 3.141592653589793
+t2 = math.pi * t0**2 * n0
+t3 = t2 / t1
+answer = math.sqrt(max(0, t3))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"drei tischläufer haben zusammen eine fläche von 224 Quadratzoll. wenn man die tischläufer so übereinander legt, dass sie 80 % eines tisches mit einer fläche von 175 Quadratzoll bedecken, beträgt die fläche, die von genau zwei lagen tischläufern bedeckt wird, 24 Quadratzoll. wie groß ist die fläche des tisches, die mit drei lagen tischläufern bedeckt wird?",30.0,"n0 = 224.0
+n1 = 80.0
+n2 = 175.0
+n3 = 24.0
+t0 = n1 / 100.0
+t1 = n0 - n3
+t2 = n2 * t0
+t3 = t1 - t2
+answer = t3 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"30 gleich große quadratische Steinplatten werden benötigt, um eine Bodenfläche von 120 m² zu bedecken.",200.0,"import math
+n0 = 30.0
+n1 = 120.0
+t0 = n1 / n0
+t1 = math.sqrt(max(0, t0))
+answer = t1 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Punkte a , b und c haben die xy-Koordinaten ( 2,0 ) , ( 8,12 ) bzw. ( 14,0 ) . Die Punkte x , y und z haben die xy-Koordinaten ( 6,0 ) , ( 8,4 ) bzw. ( 10,0 ) . Welcher Bruchteil w der Fläche des Dreiecks abc ist die Fläche des Dreiecks xyz ?",0.111111111111111,"n0 = 2.0
+n1 = 0.0
+n2 = 8.0
+n3 = 12.0
+n4 = 14.0
+n5 = 0.0
+n6 = 6.0
+n7 = 0.0
+n8 = 8.0
+n9 = 4.0
+n10 = 10.0
+n11 = 0.0
+t0 = 10.0 + 2.0
+t1 = 4.0**min(2.0, 5)
+t2 = t1 / 2.0
+t3 = t0**min(2.0, 5)
+t4 = t3 / 2.0
+answer = t2 / t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Länge des Rechtecks ist dreimal so groß wie seine Breite und sein Umfang beträgt 48 m. Wie groß ist die Fläche des Rechtecks?,108.0,"n0 = 48.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 2.0
+t2 = t0 + t1
+t3 = n0 / t2
+t4 = t3 * 3.0
+answer = t3 * t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Fläche einer Raute ist gleich der Fläche eines Rechtecks mit einer Länge von 20 cm und einer Breite von 10 cm. Wenn eine der Diagonalen 32 cm lang ist, wie lang ist dann die andere Diagonale?",12.5,"n0 = 20.0
+n1 = 10.0
+n2 = 32.0
+t0 = n0 * n1  # area of rectangle
+t1 = t0 * 2.0
+answer = t1 / n2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"2 Eckfelder eines Schachbrettes ( diagonal gegenüber ) sind ausgeschnitten worden, es gibt einen rechteckigen Block = 2 Quadratmeter Schachbrett, wie viele solcher Blöcke können auf dem Schachbrett platziert werden ? """,30.0,"n0 = 2.0
+n1 = 2.0
+t0 = n0 * n0
+t1 = t0 * t0
+t2 = n0 * t1
+answer = t2 - 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Oberfläche eines Würfels beträgt 150 cm². Wie groß ist sein Volumen?,125.0,"import math
+n0 = 150.0
+t0 = 2.0 + 4.0
+t1 = n0 / t0
+t2 = math.sqrt(max(0, t1))
+answer = t2**3
+print(answer)",MathQA_Geometry
+Geometry,geometry,ein stahlgefäß hat einen boden mit einer länge von 60 cm und einer breite von 30 cm. in das gefäß wird wasser gegossen. ein würfelförmiger stahlkasten mit einem rand von 30 cm wird vollständig in das gefäß eingetaucht. um wie viel wird das wasser steigen?,15.0,"n0 = 60.0
+n1 = 30.0
+n2 = 30.0
+t0 = n0 * n1
+t1 = n1**min(3.0, 5)
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn die Seiten eines Quadrats mit sqrt ( 5 ) multipliziert werden, ist die Fläche des ursprünglichen Quadrats wie viel mal so groß wie die Fläche des resultierenden Quadrats?",20.0,"n0 = 5.0
+
+answer = 4 * n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn n die kleinste ganze Zahl ist, bei der 432 mal n das Quadrat einer ganzen Zahl ist, welchen Wert hat dann n?",3.0,"n0 = 432.0
+t0 = n0 / 2.0
+t1 = t0 / 2.0
+t2 = t1 / 2.0
+t3 = t2 / 2.0
+t4 = t3 / 3.0
+answer = t4 / 3.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,der boden eines rechteckigen raumes ist 19 m lang und 12 m breit. der raum ist auf allen seiten von einer 2 m breiten veranda umgeben. die fläche der veranda beträgt :,140.0,"n0 = 19.0
+n1 = 12.0
+n2 = 2.0
+t0 = n2 * n2
+t1 = n0 * n1  # area of rectangle
+t2 = n0 + t0
+t3 = n1 + t0
+t4 = t2 * t3  # area of rectangle
+answer = t4 - t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie groß ist die Fläche eines quadratischen Feldes, dessen Diagonale 10 m lang ist?",50.0,"n0 = 10.0
+t0 = n0**2
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Finde den Umfang und die Fläche eines Quadrats mit der Seitenlänge 13 cm.,169.0,"n0 = 13.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein gleichseitiges dreieck t 2 wird gebildet, indem die mittelpunkte der seiten eines anderen gleichseitigen dreiecks t 1 verbunden werden. ein drittes gleichseitiges dreieck t 3 wird gebildet, indem die mittelpunkte von t 2 verbunden werden, und dieser Prozess wird unendlich fortgesetzt. wenn jede seite von t 1 60 cm beträgt, finden Sie die Summe der umfangsmaße aller dreiecke.",360.0,"n0 = 2.0
+n1 = 1.0
+n2 = 3.0
+n3 = 2.0
+n4 = 1.0
+n5 = 60.0
+t0 = n5 + n5 + n5  # perimeter of a triangle
+answer = t0 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Der Flächeninhalt eines Parallelogramms beträgt 128 m². Der Flächeninhalt eines Dreiecks, das durch seine Diagonale gebildet wird, ist dann - - - - - - - - - - - ?",64.0,"n0 = 128.0
+
+answer = n0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,ein rechteck mit einer länge von 8 zoll und einer breite von 6 zoll besteht aus 48 quadraten von 1 zoll mal 1 zoll. durch wie viele der quadrate geht eine diagonale des rechtecks?,12.0,"n0 = 8.0
+n1 = 6.0
+n2 = 48.0
+n3 = 1.0
+n4 = 1.0
+t0 = n0 + n1
+answer = t0 - 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn der Durchmesser des Kreises r 60 % des Durchmessers des Kreises s beträgt, ist die Fläche des Kreises r wie viel Prozent der Fläche des Kreises s?",36.0,"import math
+n0 = 60.0
+t0 = math.pi * n0**2
+t1 = math.pi * 100.0**2
+t2 = t0 * 100.0
+answer = t2 / t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Fläche eines rechteckigen Grundstücks beträgt 360 Quadratmeter. Wenn die Länge 25 % kleiner ist als die Breite, wie groß ist dann die Breite des Grundstücks?",21.908902300206645,"import math
+n0 = 360.0
+n1 = 25.0
+t0 = n1 / 100.0
+t1 = 1.0 - t0
+t2 = n0 / t1
+answer = math.sqrt(max(0, t2))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie viel größer ist die kombinierte Fläche in Quadratzentimetern auf der Vorder- und Rückseite eines rechteckigen Blattes mit den Maßen 11 mal 13 Zentimeter als die eines rechteckigen Blattes mit den Maßen 6,5 mal 11 Zentimeter?",100.0,"n0 = 11.0
+n1 = 13.0
+n2 = 6.5
+n3 = 11.0
+t0 = n0 * n1  # area of rectangle
+t1 = n0 * n2  # area of rectangle
+t2 = t0 * 2.0
+t3 = t1 * 2.0
+t4 = t2 - t3
+t5 = t4 / t0
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn g die kleinste positive ganze Zahl ist, so dass 3150 multipliziert mit g das Quadrat einer ganzen Zahl ist, dann muss g sein",14.0,"n0 = 3150.0
+t0 = 2.0 + 3.0
+t1 = n0 / 2.0
+t2 = t1 / t0
+t3 = t2 / t0
+t4 = t3 / 3.0
+t5 = t4 / 3.0
+answer = t5 * 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Breite einer rechteckigen Halle beträgt ½ ihrer Länge. Wenn die Fläche der Halle 288 m² beträgt, wie groß ist die Differenz zwischen ihrer Länge und ihrer Breite?",12.0,"import math
+n0 = 288.0
+t0 = 1.0 / 2.0
+t1 = n0 / t0
+t2 = math.sqrt(max(0, t1))
+answer = t2 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,die schräge höhe eines rechtwinkligen kegels beträgt 10 m und seine höhe 8 m. bestimmen sie den flächeninhalt seiner gekrümmten oberfläche.,60.0,"import math
+n0 = 10.0
+n1 = 8.0
+t0 = n0**min(2.0, 5)
+t1 = n1**min(2.0, 5)
+t2 = t0 - t1
+t3 = math.sqrt(max(0, t2))
+answer = n0 * t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Halle ist 15 m lang und 12 m breit. Wenn die Summe der Flächen des Bodens und der Decke gleich der Summe der Flächen der vier Wände ist, ist das Volumen der Halle:",1200.0,"n0 = 15.0
+n1 = 12.0
+t0 = n0 + n1
+t1 = n0 * n1
+t2 = t1 * 2.0
+t3 = t0 * 2.0
+t4 = t2 / t3
+answer = t4 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein Würfel mit einer Kantenlänge von 12 cm ist vollständig in ein rechteckiges Gefäß eingetaucht, das Wasser enthält. Wenn die Abmessungen des Bodens des Gefäßes 20 cm * 15 cm betragen, finden Sie den Anstieg des Wasserspiegels?",5.76,"n0 = 12.0
+n1 = 20.0
+n2 = 15.0
+t0 = n1 * n2
+t1 = n0**3
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein kreisförmiger Draht mit einem Radius von 42 cm wird geschnitten und in die Form eines Rechtecks gebogen, dessen Seiten im Verhältnis 6 : 5 stehen. die kleinere Seite des Rechtecks ist :",59.975859750350594,"import math
+n0 = 42.0
+n1 = 6.0
+n2 = 5.0
+t0 = n1 + n2
+t1 = 2 * math.pi * n0
+t2 = t0 * 2.0
+t3 = t1 / t2
+answer = n2 * t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,die diagonale des bodens eines rechteckigen schrankes beträgt 7 fuß. die kürzere seite des schrankes beträgt 4 fuß. wie groß ist die fläche des schrankes in quadratfuß?,27.0,"import math
+n0 = 7.0
+n1 = 4.0
+t0 = 2.0 * 4.0
+t1 = n0 * 2.0
+t2 = t0 + 1.0
+t3 = t1 + 1.0
+t4 = t2 / 2.0
+t5 = t3 / 2.0
+t6 = t5**min(2.0, 5)
+t7 = t4**min(2.0, 5)
+t8 = t6 - t7
+t9 = math.sqrt(max(0, t8))
+answer = t4 * t9  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"eine kiste misst innen 3 fuß mal 8 fuß mal 12 fuß. eine steinsäule in form eines rechtwinkligen zylinders muss für den versand in die kiste passen, so dass sie aufrecht steht, wenn die kiste auf mindestens einer ihrer sechs seiten steht. wie groß ist der radius in fuß der säule mit dem größten volumen, die noch in die kiste passen könnte?",3.0,"n0 = 3.0
+n1 = 8.0
+n2 = 12.0
+t0 = n1 * n2
+t1 = n0 * t0
+t2 = t1 / n2
+answer = t2 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn jede Seite eines rechtwinkligen Dreiecks um 10 % vergrößert wird und die Basis ( b ) die Hälfte der Höhe beträgt, wie groß ist dann die prozentuale Veränderung der Fläche?",21.000000000000018,"n0 = 10.0
+t0 = n0 + 100.0
+t1 = t0 / 100.0
+t2 = t1**min(2.0, 5)
+t3 = t2 - 1.0
+answer = t3 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"32 Meter Draht stehen zur Verfügung, um ein Blumenbeet in Form eines Kreissektors einzuzäunen. Wie groß muss der Radius des Kreises in Metern sein, wenn wir ein Blumenbeet mit der größtmöglichen Fläche haben wollen?",8.0,"n0 = 32.0
+
+answer = n0 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein rechteckiger Fußboden, der 24 mal 64 Meter groß ist, soll mit Teppichquadraten bedeckt werden, die jeweils 8 mal 8 Meter groß sind. Wie hoch sind die Gesamtkosten für die Anzahl der Teppichquadrate, die zum Bedecken des Fußbodens benötigt werden, wenn die Teppichquadrate 24 Dollar pro Stück kosten?",576.0,"n0 = 24.0
+n1 = 64.0
+n2 = 8.0
+n3 = 8.0
+n4 = 24.0
+
+answer = n0 * n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Seitenlänge eines Würfels beträgt 12 m, wie groß ist die Seitenfläche?",516.0,"n0 = 12.0
+t0 = 10.0 * 4.0
+t1 = t0 + 3.0
+answer = n0 * t1  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein rechteckiges feld soll an drei seiten eingezäunt werden, wobei eine seite von 20 fuß unbedeckt bleibt. wenn die fläche des feldes 60 sq. fuß beträgt, wie viele fuß zaun sind dann erforderlich?",26.0,"n0 = 20.0
+n1 = 60.0
+t0 = n1 / n0
+t1 = t0 * 2.0
+answer = n0 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn das Volumen eines Würfels x ^ 3 Kubikeinheiten beträgt, wie groß ist dann die Anzahl der Quadrateinheiten in der Oberfläche des Würfels?",6.0,"n0 = 3.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 1.0
+answer = t0 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein metallisches blech hat eine rechteckige form mit den abmessungen 48 m x 38 m. von jeder seiner ecken wird ein quadrat abgeschnitten, so dass ein offener kasten entsteht. wenn die länge des quadrats 8 m beträgt, ist das volumen des kastens (in m 3) :",5632.0,"n0 = 48.0
+n1 = 38.0
+n2 = 8.0
+n3 = 3.0
+t0 = n2 * 2.0
+t1 = n0 - t0
+t2 = n1 - t0
+answer = n2 * t1 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Seiten eines quadratischen Bereichs sind, auf den Zentimeter genau gemessen, 10 cm lang. Der kleinstmögliche Wert der tatsächlichen Fläche des quadratischen Bereichs ist",90.25,"n0 = 10.0
+t0 = n0 - 0.25
+t1 = t0 - 0.25
+answer = t1**min(2.0, 5)
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Das Volumen eines bestimmten Stoffes ist immer direkt proportional zu seinem Gewicht. Wenn 48 Kubikzoll des Stoffes 112 Unzen wiegen, wie groß ist dann das Volumen in Kubikzoll von 84 Unzen dieses Stoffes?",36.0,"n0 = 48.0
+n1 = 112.0
+n2 = 84.0
+t0 = n0 / n1
+answer = n2 * t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Grundfläche und die Höhe eines Parallelogramms betragen 12 m bzw. 6 m. Der Flächeninhalt ist dann = = = = = = = ?,72.0,"n0 = 12.0
+n1 = 6.0
+
+answer = n0 * n1  # area of rectangle
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein bestimmter landwirt zahlt 60 $ pro acre und monat für die pacht von landwirtschaftsflächen. wie viel zahlt der landwirt pro monat für die pacht eines rechteckigen landwirtschaftsgebiets, das 360 Fuß mal 1210 Fuß groß ist? (43.560 Quadratfuß = 1 acre)",600.0,"n0 = 60.0
+n1 = 360.0
+n2 = 1210.0
+n3 = 43560.0
+n4 = 1.0
+t0 = n1 * n2
+t1 = t0 / 10.0
+t2 = t0 / t1
+answer = n0 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,Finde den Flächeninhalt eines Parallelogramms mit der Basis 26 cm und der Höhe 14 cm ?,364.0,"n0 = 26.0
+n1 = 14.0
+
+answer = n0 * n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Eine dünne rechteckige Kartoffelplatte wurde für ein Osmose-Labor in zwei Stücke geschnitten. Ein Stück ist 50 mm größer als das andere. Wenn die ursprüngliche, ungeschnittene Platte 600 mm lang ist, wie lang ist dann das andere Stück der Kartoffel, nachdem es geschnitten wurde?",275.0,"n0 = 50.0
+n1 = 600.0
+t0 = n1 - n0
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein würfelförmiger Gegenstand mit den Maßen 3 '' x 3 '' x 3 '' ist auf allen Außenflächen, einschließlich der Ober- und Unterseite, blau gestrichen. Wenn der Würfel in 27 Würfel mit den Maßen 1 '' x 1 '' x 1 '' zerlegt wird, wie viele Würfel mit den Maßen 1 '' haben dann noch bemalte Flächen?",26.0,"n0 = 3.0
+n1 = 3.0
+n2 = 3.0
+n3 = 27.0
+n4 = 1.0
+n5 = 1.0
+n6 = 1.0
+n7 = 1.0
+
+answer = n3 - 1.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Fläche eines Quadrats beträgt 144 m ². Finde seinen Umfang.,48.0,"import math
+n0 = 144.0
+t0 = math.sqrt(max(0, n0))
+answer = 4 * t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"huey ' s hip pizza verkauft zwei Größen von quadratischen Pizzen: eine kleine Pizza, die 14 Zoll auf einer Seite misst und $ 10 kostet, und eine große Pizza, die 21 Zoll auf einer Seite misst und $ 20 kostet. wenn zwei Freunde zu huey ' s mit $ 30 pro Person gehen, wie viele Quadratzentimeter mehr Pizza können sie kaufen, wenn sie ihr Geld zusammenlegen, als wenn sie jeder Pizza alleine kaufen?",49.0,"n0 = 14.0
+n1 = 10.0
+n2 = 21.0
+n3 = 20.0
+n4 = 30.0
+t0 = n2**min(2.0, 5)
+t1 = n0**min(2.0, 5)
+t2 = t1 + t0
+t3 = t0 * 3.0
+t4 = t2 + t2
+answer = t3 - t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,Wie groß ist die Fläche eines quadratischen Feldes mit einer Seitenlänge von 17 m?,289.0,"n0 = 17.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"eine lösung aus spiritus und wasser wird auf einem markt verkauft. der preis pro liter der lösung ist direkt proportional zu dem anteil ( fraktion ) an spiritus ( nach volumen ), den die lösung enthält. eine lösung aus 1 liter spiritus und 1 liter wasser kostet 30 cent. wie viele cent kostet eine lösung aus 1 liter spiritus und 2 litern wasser ?",30.0,"n0 = 1.0
+n1 = 1.0
+n2 = 30.0
+n3 = 1.0
+n4 = 2.0
+t0 = n0 + n4
+t1 = n0 / t0
+t2 = n2 * t1
+answer = t0 * t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein rechteckiges grasfeld ist 75 m * 55 m, es hat einen Weg von 2,8 m Breite rundherum auf der Außenseite. finden Sie die Fläche des Weges und die Kosten für den Bau es bei rs . 2 pro Quadratmeter?",1518.7199999999991,"n0 = 75.0
+n1 = 55.0
+n2 = 2.8
+n3 = 2.0
+t0 = n2 * n3
+t1 = n0 * n1  # area of rectangle
+t2 = n0 + t0
+t3 = n1 + t0
+t4 = t2 * t3  # area of rectangle
+t5 = t4 - t1
+answer = n3 * t5
+print(answer)",MathQA_Geometry
+Geometry,geometry,Ein Rechteck wird in der Länge um 45 % vergrößert und in der Breite um 20 % verkleinert. Wie wirkt sich das auf die Fläche aus?,11600.0,"n0 = 45.0
+n1 = 20.0
+t0 = n0 + 100.0
+t1 = 100.0 - n1
+answer = t0 * t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"12 Geschäftsführer und 7 Vorstandsvorsitzende treffen sich zu einer Konferenz. Wenn jeder Geschäftsführer jedem anderen Geschäftsführer und jedem Vorstandsvorsitzenden einmal die Hand schüttelt, und jeder Vorstandsvorsitzende jedem Geschäftsführer die Hand schüttelt, den anderen Vorstandsvorsitzenden aber nicht, wie viele Händedrücke würden dann stattfinden?",150.0,"n0 = 12.0
+n1 = 7.0
+t0 = n0 * n1
+t1 = n0 - 1.0
+t2 = n0 * t1
+t3 = t2 / 2.0
+answer = t3 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Um eine Bodenfläche von 67,5 m² zu bedecken, werden 30 gleich große quadratische Steinplatten benötigt.",150.0,"import math
+n0 = 30.0
+n1 = 67.5
+t0 = n1 / n0
+t1 = math.sqrt(max(0, t0))
+answer = t1 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,der umfang eines gleichschenkligen rechtwinkligen dreiecks ist 8 + 8 sq rt 2. wie lang ist die hypotenuse des dreiecks?,5.6568542494923815,"import math
+n0 = 8.0
+n1 = 8.0
+n2 = 2.0
+t0 = math.sqrt(max(0, n2))
+t1 = n0 * t0
+answer = t1 / n2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wenn die Fläche eines Quadrats mit einer Seitenlänge von 12 Zentimetern gleich der Fläche eines Rechtecks mit einer Breite von 6 Zentimetern ist, wie lang ist dann das Rechteck in Zentimetern?",24.0,"n0 = 12.0
+n1 = 6.0
+t0 = n0**min(2.0, 5)
+answer = t0 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,die fläche eines rechteckigen feldes beträgt 300 quadratmeter. sein umfang beträgt 70 meter. finden sie die breite dieses rechtecks.,15.0,"import math
+n0 = 300.0
+n1 = 70.0
+t0 = n1 / 2.0
+t1 = n0 * 4.0
+t2 = t0 * t0
+t3 = t2 - t1
+t4 = math.sqrt(max(0, t3))
+t5 = t0 - t4
+answer = t5 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie groß ist in einem rechtwinkligen Koordinatensystem die Fläche eines Rhombus, dessen Eckpunkte die Koordinaten ( 0 , 4,5 ) , ( 8 , 0 ) , ( 0 , - 4,5 ) , ( - 8 , 0 ) haben?",72.0,"n0 = 0.0
+n1 = 4.5
+n2 = 8.0
+n3 = 0.0
+n4 = 0.0
+n5 = 4.5
+n6 = 8.0
+n7 = 0.0
+t0 = n2 * 2.0
+t1 = n1 * 2.0
+answer = t0 * t1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Diagonalen eines Rhombus sind 14 cm und 18 cm. Wie groß ist seine Fläche?,126.0,"n0 = 14.0
+n1 = 18.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein rechteckiges schwimmbecken ist 10 Fuß mal 12 Fuß groß. ein deck, das gleichmäßig breit ist, umgibt das schwimmbecken. die gesamtfläche des schwimmbeckens und des decks beträgt 360 Quadratfuß. wie breit ist das deck?",4.0,"import math
+n0 = 10.0
+n1 = 12.0
+n2 = 360.0
+t0 = n0 * n1  # area of rectangle
+t1 = n1 - 1.0
+t2 = t1**min(2.0, 5)
+t3 = n2 - t0
+t4 = t2 + t3
+t5 = math.sqrt(max(0, t4))
+t6 = t5 - t1
+answer = t6 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Länge eines Rechtecks wird um 22 % verringert. Um wie viel % müsste die Breite vergrößert werden, damit die ursprüngliche Fläche erhalten bleibt?",28.2051282051282,"n0 = 22.0
+t0 = 100.0 - n0
+t1 = t0 / 100.0
+t2 = 1.0 - t1
+t3 = t2 / t1
+answer = t3 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie viele Diagonalen hat ein Polygon mit 19 Seiten, wenn einer seiner Scheitelpunkte mit keiner Diagonale verbunden ist?",135.0,"n0 = 19.0
+t0 = n0 - 1.0
+t1 = t0 - 3.0
+t2 = t0 * t1
+answer = t2 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"die oberfläche einer kugel ist 4 π r 2 , wobei r der radius der kugel ist. wenn die grundfläche einer halbkugel 3 ist, wie groß ist dann die oberfläche r dieser halbkugel ?",9.0,"n0 = 4.0
+n1 = 2.0
+n2 = 3.0
+t0 = n2 / 3.141592653589793
+t1 = n0 * 3.141592653589793
+t2 = t0 * t1
+t3 = t0 * 3.141592653589793
+t4 = t2 / n1
+answer = t4 + t3
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Diagonalen eines Rhombus sind 25 cm und 30 cm. Wie groß ist seine Fläche?,375.0,"n0 = 25.0
+n1 = 30.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Länge einer rechteckigen Halle ist um 5 m größer als ihre Breite. Die Fläche der Halle beträgt 750 m 2. Die Länge der Halle beträgt :,30.0,"n0 = 5.0
+n1 = 750.0
+n2 = 2.0
+t0 = n1 / n0
+answer = t0 / n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"eine frau baut in ihrem garten, der die form eines quadrats hat, kohl an. jeder kohl nimmt 1 quadratfuß fläche in ihrem garten ein. in diesem jahr hat sie ihre produktion im vergleich zum letzten jahr um 211 kohlköpfe erhöht. die form der fläche, die für den kohlanbau verwendet wird, ist in beiden jahren quadratisch geblieben. wie viele kohlköpfe hat sie in diesem jahr produziert?",11236.0,"n0 = 1.0
+n1 = 211.0
+t0 = n1 - n0
+t1 = t0 / 2.0
+t2 = n0 + t1
+answer = t2**min(2.0, 5)
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Diagonalen eines Rhombus sind 15 cm und 17 cm. Wie groß ist seine Fläche?,127.5,"n0 = 15.0
+n1 = 17.0
+
+answer = n0 * n1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein rechteckiges feld soll an drei seiten eingezäunt werden, wobei eine seite von 20 fuß unbedeckt bleibt. wenn die fläche des feldes 440 sq. fuß beträgt, wie viele fuß zaun sind dann erforderlich?",64.0,"n0 = 20.0
+n1 = 440.0
+t0 = n1 / n0
+t1 = t0 * 2.0
+answer = n0 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,der Radius einer Kugel wird um 50 % vergrößert. die Vergrößerung der Kugeloberfläche beträgt :,125.0,"import math
+n0 = 50.0
+t0 = n0 / 100.0
+t1 = 4 * math.pi * 1.0**2
+t2 = t0 + 1.0
+t3 = 4 * math.pi * t2**2
+t4 = t3 - t1
+t5 = t4 / t1
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein Würfel mit einer Kantenlänge von 15 cm ist vollständig in ein rechteckiges Gefäß mit Wasser eingetaucht. Wenn die Abmessungen der Grundfläche des Gefäßes 20 cm * 15 cm betragen, finden Sie den Anstieg des Wasserspiegels.",11.25,"n0 = 15.0
+n1 = 20.0
+n2 = 15.0
+t0 = n0 * n1
+t1 = n0**3
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Bei der Messung der Seiten eines Rechtecks wird eine Seite mit einem Überschuss von 9 % und die andere mit einem Defizit von 8 % gemessen. Finden Sie den prozentualen Fehler in der aus diesen Messungen berechneten Fläche.,0.28,"n0 = 9.0
+n1 = 8.0
+t0 = n0 * n1
+t1 = n0 - n1
+t2 = t0 / 100.0
+answer = t1 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein rechtwinkliges dreieck pqr soll in der xy - ebene so konstruiert werden, dass der rechte winkel bei p liegt und pr parallel zur x - achse verläuft. die x- und y-Koordinaten von p , q und r sollen ganzzahlen sein, die die ungleichungen - 4 ≤ x ≤ 5 und 6 ≤ y ≤ 16 erfüllen. wie viele verschiedene dreiecke mit diesen eigenschaften könnten konstruiert werden ?",9900.0,"n0 = 4.0
+n1 = 5.0
+n2 = 6.0
+n3 = 16.0
+t0 = n0 + n2
+t1 = n3 - n1
+t2 = 10.0 - 1.0
+t3 = t0 * t1
+t4 = t3 * t2
+answer = t4 * 10.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"ein gleichseitiges dreieck t 2 wird gebildet, indem die mittelpunkte der seiten eines anderen gleichseitigen dreiecks t 1 verbunden werden. ein drittes gleichseitiges dreieck t 3 wird gebildet, indem die mittelpunkte von t 2 verbunden werden, und dieser Prozess wird unendlich fortgesetzt. wenn jede seite von t 1 50 cm beträgt, finden Sie die Summe der umfangsmaße aller dreiecke.",300.0,"n0 = 2.0
+n1 = 1.0
+n2 = 3.0
+n3 = 2.0
+n4 = 1.0
+n5 = 50.0
+t0 = n5 + n5 + n5  # perimeter of a triangle
+answer = t0 + t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie groß ist der Flächeninhalt eines Dreiecks mit den Seitenlängen 39 cm, 32 cm und 10 cm?",160.0,"n0 = 39.0
+n1 = 32.0
+n2 = 10.0
+t0 = n1 * n2
+answer = t0 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,der umfang eines gleichschenkligen rechtwinkligen dreiecks ist 12 + 12 sq rt 2. wie lang ist die hypotenuse des dreiecks?,8.485281374238571,"import math
+n0 = 12.0
+n1 = 12.0
+n2 = 2.0
+t0 = math.sqrt(max(0, n2))
+t1 = n0 * t0
+answer = t1 / 2.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,ein gleichseitiges dreieck mit einer seite von 5 m. in diesem dreieck befindet sich ein quadrat mit einer seite von 2 m. berechnen sie den prozentualen flächenanteil außerhalb des quadrats in diesem dreieck.,63.04958277186395,"import math
+n0 = 5.0
+n1 = 2.0
+t0 = n0**min(2.0, 5)
+t1 = math.sqrt(max(0, 3.0))
+t2 = n1**2
+t3 = t1 / 4.0
+t4 = t3 * t0
+t5 = t4 - t2
+t6 = t5 / t4
+answer = t6 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"carmen hat eine skulptur aus kleinen holzstücken angefertigt. die skulptur ist 2 fuß 10 zoll hoch. carmen stellt ihre skulptur auf einen sockel, der 4 zoll hoch ist. wie hoch sind die skulptur und der sockel zusammen?",3.166666666666666,"n0 = 2.0
+n1 = 10.0
+n2 = 4.0
+t0 = n0 + n1
+t1 = n0 * t0
+t2 = t1 + 10.0
+t3 = n2 + t2
+answer = t3 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Finde den Umfang und die Fläche eines Quadrats mit der Seitenlänge 9 cm.,81.0,"n0 = 9.0
+
+answer = n0**2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Wie groß ist in einem rechtwinkligen Koordinatensystem die Fläche eines Rhombus, dessen Eckpunkte die Koordinaten ( 0 , 5,5 ) , ( 8 , 0 ) , ( 0 , - 5,5 ) , ( - 8 , 0 ) haben?",88.0,"n0 = 0.0
+n1 = 5.5
+n2 = 8.0
+n3 = 0.0
+n4 = 0.0
+n5 = 5.5
+n6 = 8.0
+n7 = 0.0
+t0 = n2 * 2.0
+t1 = n1 * 2.0
+answer = t0 * t1 / 2
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Fläche eines Kreises wird um 300 % vergrößert. Um wie viel Prozent hat sich der Durchmesser des Kreises vergrößert?,100.0,"n0 = 300.0
+t0 = 2.0 / 2.0
+answer = t0 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"die länge des rechteckigen feldes ist das doppelte seiner breite. innerhalb des feldes befindet sich ein quadratischer teich mit einer länge von 5 m. wenn die fläche des teiches 1/8 der fläche des feldes beträgt, wie groß ist die länge des feldes?",20.0,"import math
+n0 = 5.0
+n1 = 1.0
+n2 = 8.0
+t0 = 1 / 2.0
+t1 = n0**2
+t2 = n2 * t1
+t3 = t2 / t0
+answer = math.sqrt(max(0, t3))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"in einer neuen Wohnsiedlung sollen entlang des Bürgersteigs einer bestimmten Straße Bäume gepflanzt werden. jeder Baum nimmt einen Quadratmeter des Bürgersteigs ein, und zwischen den einzelnen Bäumen sollen 20 Fuß liegen. wie viele Bäume können gepflanzt werden, wenn die Straße 148 Fuß lang ist?",8.0,"n0 = 20.0
+n1 = 148.0
+t0 = n0 + 1.0
+t1 = n1 - 1.0
+t2 = t1 / t0
+answer = t2 + 1.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Die Länge eines rechteckigen Feldes ist 7/5 seiner Breite. Wenn der Umfang des Feldes 384 Meter beträgt, wie groß ist dann die Breite des Feldes?",80.0,"n0 = 7.0
+n1 = 5.0
+n2 = 384.0
+t0 = n0 / n1
+t1 = t0 + t0
+t2 = t1 + 2.0
+answer = n2 / t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"die oberfläche einer kugel ist gleich der gekrümmten oberfläche eines rechtwinkligen zylinders, dessen höhe und durchmesser jeweils 12 cm betragen. der radius der kugel ist :",6.0,"import math
+n0 = 12.0
+t0 = n0 / 2.0
+t1 = 4.0 * 3.141592653589793
+t2 = n0 * t0
+t3 = t2 * 3.141592653589793
+t4 = t3 * 2.0
+t5 = t4 / t1
+answer = math.sqrt(max(0, t5))
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Eine Kiste misst innen 7 Fuß mal 8 Fuß mal 12 Fuß. Eine Steinsäule in Form eines rechtwinkligen Zylinders muss für den Versand in die Kiste passen, so dass sie aufrecht steht, wenn die Kiste auf mindestens einer ihrer sechs Seiten steht. Wie groß ist der Radius der Säule mit dem größten Volumen, die noch in die Kiste passen könnte, in Fuß?",7.0,"n0 = 7.0
+n1 = 8.0
+n2 = 12.0
+t0 = n1 * n2
+t1 = n0 * t0
+t2 = t1 / n2
+answer = t2 / n1
+print(answer)",MathQA_Geometry
+Geometry,geometry,Ein Halbkreis hat einen Radius von 14. Wie groß ist der ungefähre Umfang des Halbkreises?,71.9822971502571,"import math
+n0 = 14.0
+t0 = 2 * math.pi * n0
+t1 = n0 * 2.0
+t2 = t0 / 2.0
+answer = t2 + t1
+print(answer)",MathQA_Geometry
+Geometry,geometry,"vier kreisförmige Pappstücke mit einem Radius von je 7 cm werden so angeordnet, dass jedes Stück zwei andere Stücke berührt. die Fläche des von den vier Stücken eingeschlossenen Raums ist. vier kreisförmige Pappstücke mit einem Radius von je 7 cm werden so angeordnet, dass jedes Stück zwei andere Stücke berührt. die Fläche des von den vier Stücken eingeschlossenen Raums ist",42.06195997410015,"n0 = 7.0
+n1 = 7.0
+t0 = n0 * 2.0
+t1 = n0**min(2.0, 5)
+t2 = t1 * 3.141592653589793
+t3 = t0**min(2.0, 5)
+answer = t3 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,"das Verhältnis der Flächen zweier Quadrate, von denen das eine die doppelte Diagonale hat als das andere, ist:",4.0,"t0 = 1 / 2.0
+t1 = t0 * 4.0
+answer = t1 / t0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"wenn abc ein Viertelkreis ist und ein kleinerer Kreis darin eingeschrieben ist; wenn der Radius des Viertelkreises 1,414 Einheiten beträgt. finden Sie den Radius des kleineren Kreises",0.5860000000000001,"n0 = 1.414
+
+answer = 2.0 - n0
+print(answer)",MathQA_Geometry
+Geometry,geometry,Finde die Oberfläche eines 8 cm x 6 cm x 2 cm großen Steins.,152.0,"n0 = 8.0
+n1 = 6.0
+n2 = 2.0
+
+answer = 2 * (n0 * n1 + n0 * n2 + n1 * n2)  # surface of a rectangular prism
+print(answer)",MathQA_Geometry
+Geometry,geometry,Bei der Messung der Seiten eines Rechtecks wird eine Seite um 5 % zu viel und die andere um 4 % zu wenig gemessen. Finden Sie den prozentualen Fehler in der aus diesen Messungen berechneten Fläche.,0.8,"n0 = 5.0
+n1 = 4.0
+t0 = n0 * n1
+t1 = n0 - n1
+t2 = t0 / 100.0
+answer = t1 - t2
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Länge des Rechtecks ist dreimal so groß wie seine Breite und sein Umfang beträgt 120 m. Wie groß ist die Fläche des Rechtecks?,675.0,"n0 = 120.0
+t0 = 2.0 * 3.0
+t1 = 1.0 * 2.0
+t2 = t0 + t1
+t3 = n0 / t2
+t4 = t3 * 3.0
+answer = t3 * t4
+print(answer)",MathQA_Geometry
+Geometry,geometry,Die Länge und die Breite eines Quadrats werden um 40 % bzw. 30 % vergrößert. Die Fläche des so entstandenen Rechtecks übersteigt die Fläche des Quadrats um ?,81.99999999999999,"n0 = 40.0
+n1 = 30.0
+t0 = n0 / 100.0
+t1 = n1 / 100.0
+t2 = t0 + 1.0
+t3 = t1 + 1.0
+t4 = t2 * t3
+t5 = t4 - 1.0
+answer = t5 * 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"beim besuch einer kleinen stadt in den vereinigten staaten verlor ich meinen mantel in einem bus. als ich die sache dem busunternehmen meldete, wurde ich nach der nummer des busses gefragt. obwohl ich mich nicht an die genaue nummer erinnerte, fiel mir auf, dass die nummer des busses eine gewisse eigenheit aufwies. das nummernschild zeigte die busnummer als ein perfektes quadrat und auch wenn man das nummernschild auf den kopf stellte ... die nummer wäre immer noch ein perfektes quadrat - natürlich war sie das nicht ... ich erfuhr von der busgesellschaft, dass sie nur 5 100 busse hatten, die von 1 bis 500 nummeriert waren . daraus konnte ich die busnummer ableiten . können sie mir sagen, was die andere nummer war .",196.0,"n0 = 5.0
+n1 = 100.0
+n2 = 1.0
+n3 = 500.0
+t0 = n1 - 4.0
+answer = t0 + 100.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,ein pferd ist an einer ecke eines rechteckigen grasfeldes von 45 m mal 25 m mit einem 22 m langen seil angebunden. über wie viel fläche des feldes kann es grasen?,380.132711084365,"n0 = 45.0
+n1 = 25.0
+n2 = 22.0
+t0 = n2**min(2.0, 5)
+t1 = t0 * 3.141592653589793
+answer = t1 / 4.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Ein rechteckiger Hof mit einer Länge von 3,78 m und einer Breite von 5,25 m soll genau mit quadratischen Fliesen gepflastert werden, die alle die gleiche Größe haben.",21.0,"n0 = 3.78
+n1 = 5.25
+t0 = n0 * 100.0
+t1 = t0 / 3.0
+t2 = t1 / 3.0
+t3 = t2 / 3.0
+t4 = t3 / 2.0
+answer = t4 * 3.0
+print(answer)",MathQA_Geometry
+Geometry,geometry,"Vier gleiche Kreise werden um die vier Ecken eines Quadrats so beschrieben, dass jeder zwei der anderen berührt. Wenn eine Seite des Quadrats 14 cm beträgt, dann ist die zwischen den Umfängen der Kreise eingeschlossene Fläche :",42.06195997410015,"import math
+n0 = 14.0
+t0 = n0 / 2.0
+t1 = n0**2
+t2 = math.pi * t0**2
+answer = t1 - t2
+print(answer)",MathQA_Geometry
