@@ -84,89 +84,17 @@ We have utilized the `DeepL API` for high-quality, free translations of selected
 
 This table gives an overview of the different dataset versions.
 
-<table border="1" style="border-collapse: collapse; width: 60%; margin-left: auto; margin-right: auto;">
-    <thead>
-        <tr>
-            <th colspan="4"><h3>I. Arithmetic</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>arithmetic_complete</code></td>
-            <td>14</td>
-            <td>7'731'654</td>
-        </tr>
-        <tr>
-            <td><code>arithmetic_1000</code></td>
-            <td>14</td>
-            <td>1,000</td>
-        </tr>
-        <tr>
-            <td><code>arithmetic_100</code></td>
-            <td>14</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="4"><h3>II. Word Problems</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>wordProblems_complete</code></td>
-            <td>3</td>
-            <td>1,995</td>
-        </tr>
-        <tr>
-            <td><code>wordProblems_1000</code></td>
-            <td>3</td>
-            <td>1,000</td>
-        </tr>
-        <tr>
-            <td><code>wordProblems_100</code></td>
-            <td>3</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th colspan="4"><h3>III. Geometry</h3></th>
-        </tr>
-        <tr>
-            <th><strong>Name</strong></th>
-            <th><strong>Number of subcategories</strong></th>
-            <th><strong>Size</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>geometry_complete</code></td>
-            <td>1</td>
-            <td>1,698</td>
-        </tr>
-        <tr>
-            <td><code>geometry_1000</code></td>
-            <td>1</td>
-            <td>1,000</td>
-        </tr>
-        <tr>
-            <td><code>geometry_100</code></td>
-            <td>1</td>
-            <td>100</td>
-        </tr>
-    </tbody>
-</table>
+| Section           | Name                    | Number of subcategories | Size      |
+| ----------------- | ----------------------- | ----------------------- | --------- |
+| I. Arithmetic     | `arithmetic_complete`   | 14                      | 7,731,654 |
+|                   | `arithmetic_1000`       | 14                      | 1,000     |
+|                   | `arithmetic_100`        | 14                      | 100       |
+| II. Word Problems | `wordProblems_complete` | 3                       | 1,995     |
+|                   | `wordProblems_1000`     | 3                       | 1,000     |
+|                   | `wordProblems_100`      | 3                       | 100       |
+| III. Geometry     | `geometry_complete`     | 1                       | 1,698     |
+|                   | `geometry_1000`         | 1                       | 1,000     |
+|                   | `geometry_100`          | 1                       | 100       |
 
 ## Exploring the Dataset
 
