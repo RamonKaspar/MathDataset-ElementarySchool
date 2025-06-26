@@ -63,10 +63,21 @@ Example Entry (from the SVAMP dataset):
 
 ### Directory Structure & Data Management
 
-Some of files were to big for GitHub, therefore: All data files and scripts are hosted on our Google Drive, available for download [here](https://drive.google.com/drive/folders/104Vp0L2E1TPfKkVW1SJdrAyHiYLVHhRm?usp=sharing). To conserve space and facilitate easier downloading, all resources are compiled into a `data.zip` file. The contents of the zip file are organized as follows:
+The datasets are organized into three categories, with varying availability due to file size constraints:
 
-- `original-data:` Contains the original datasets in various formats as they were collected.
-- `original-data-transformed:` Includes datasets that have been transformed into the unified structure described in our documentation.
+**Available in Repository:**
+- **Word Problems**: All versions (`wordProblems_complete`, `wordProblems_1000`, `wordProblems_100`) 
+- **Geometry**: All versions (`geometry_complete`, `geometry_1000`, `geometry_100`)
+- **Arithmetic**: Sample versions only (`arithmetic_1000`, `arithmetic_100`)
+
+**Arithmetic Complete Dataset:**
+The `arithmetic_complete` dataset is too large for GitHub (2.3GB). To recreate it:
+
+1. Download source data:
+   - **Mathematics Dataset**: https://console.cloud.google.com/storage/browser/mathematics-dataset
+   - **Math-401**: https://github.com/GanjinZero/math401-llm
+
+2. Run the processing script: `/data/I_Arithmetic/script.py`
 
 The datasets are versioned into three types for each category:
 
@@ -74,7 +85,7 @@ The datasets are versioned into three types for each category:
 - `<category>_1000.csv/json`: A balanced sample of 1000 items, perfect for in-depth testing.
 - `<category>_100.csv/json`: A smaller sample of 100 items, designed for quick assessments.
 
-For ease of access, the complete datasets for smaller samples (`<category>_1000.csv/json` and `<category>_100.csv/json`) are directly accessible within this repository in the data directory.
+All sample datasets (`<category>_1000.csv/json` and `<category>_100.csv/json`) are directly accessible within this repository in the data directory.
 
 ## Translation to German
 
